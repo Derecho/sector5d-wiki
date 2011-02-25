@@ -1,5 +1,3 @@
-h1. Sector 5D IRC Network
-
 Welcome to Sector 5D IRC Network.
 
 h2. #sector5d
