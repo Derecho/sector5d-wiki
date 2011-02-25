@@ -1,0 +1,17 @@
+You can connect to Sector 5D with irc.sector5d.org on port 6697 with SSL. This is a round robin and will point you to a server. This network is SSL-only, make sure you enable SSL.
+
+|*Address*|*Ports*|*IPv6*|*Location*|*Admin*|
+| [[kinder.sector5d.org|kinder]] | 6697 SSL |  [[/media/icons/silk/tick.png]] | GB [[/media/icons/flags/gb.png]] | [[zynox]] |
+| infinite.sector5d.org | 6697 SSL |  [[/media/icons/silk/cross.png]] | GB [[/media/icons/flags/gb.png]] | [[Scott]] |
+
+You can prefix `ipv4.` or `ipv6.` to `irc.sector5d.org` to enforce a certain internet protocol version is used.
+
+h2. SSL
+
+Our server's only accept SSL connections, you MUST enable SSL to connect. You can download our CA certificate: [[here|/keys/ca.crt]]. With the CA certificate you can ensure that you are connected directly to one of our servers. Please see your IRC client documentation on how to do this, usually you will connect using a command similar to:
+
+```
+/connect -ssl_verify -ssl_capath ~/.sector5d.crt irc.sector5d.org 6697
+```
+
+Before using the above command you will need to save [[the CA certificate|/keys/ca.crt]] to your system, we saved it to ~/.sector5d.crt in the example connect command.

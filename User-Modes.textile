@@ -1,0 +1,9 @@
+|*Mode*|*Effect*|
+|i|User cannot be seen in /WHO|
+|w|User can receive WALLOPS|
+|B|User is a bot|
+|o|User is an IRC Operator|
+
+h2. See also
+
+[[Channel Modes]], [[NickServ]]

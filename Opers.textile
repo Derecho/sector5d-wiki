@@ -1,0 +1,32 @@
+h2. What privileges do Opers have?
+
+Every oper can do the following:
+
+# Call a vote and vote on any issues/suggestions.
+# Kill a local user
+# Shun a hostmask (disallowing them from sending messages, this is useful to prevent a flooder).
+# Temporarily ban a channel from being used. This should only be used to prevent illegal activity.
+# Force and prevent a nick change on a user (until they reconnect). This is use to prevent nickname change spamming.
+# Global/Local/Host-based/IP-based bans.
+
+A Oper CANNOT do the following:
+
+# Take over a channel
+# Op themselves in a channel
+# De-op another user in an IRC channel
+# Cannot join a +i or +k channel
+
+h2. List of Opers
+
+h3. Server Opers
+
+ * [[zynox]] [[/media/icons/silk/shield.png]]
+ * [[Scott]]
+
+h3. Network Opers
+
+ * [[Derecho]]
+
+h3. Key
+
+|[[/media/icons/silk/shield.png]]|Global Oper|

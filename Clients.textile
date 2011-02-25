@@ -1,0 +1,9 @@
+Any IRC client will work, but here is a short list of clients which are recommended.
+
+* [[silverex|http://www.silverex.org/]] - SilverX is similar to XChat, but its free for windows
+* [[XChat|http://xchat.org/]] - Cross-platform GUI client
+* [[Textual|http://codeux.com/textual/]] - Mac OS X Client
+* [[Colloquy|http://colloquy.info/]] - Mac OS X, iPhone and iPad client
+* [[irssi]] - Multi-platform command line client
+
+You can find a [[Comparison of IRC clients on Wikipedia|http://en.wikipedia.org/wiki/Comparison_of_IRC_clients]].

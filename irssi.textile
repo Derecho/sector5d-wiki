@@ -1,0 +1,57 @@
+This is a guide to configuring irssi to connect to Sector 5D.
+
+h2. Basic connection
+
+The following commands will create a basic SSL connection to Sector 5D. For a better setup please see [[the full configuration guide|#Full configuration]] below.
+
+```
+/network add Sector5D
+/server add -ssl -auto -network Sector5D irc.sector5d.org 6697
+/channel add -auto #sector5d Sector5D
+/connect -network Sector5D irc.sector5d.org
+/save
+```
+
+h2. Full configuration
+
+This configuration will use a client side SSL certificate and validate the server's ssl certificate.
+
+The following commands will generate a client side SSL certificate.
+
+```
+mkdir -p ~/.irssi/certs
+cd ~/.irssi/certs
+openssl req -nodes -newkey rsa:2048 -keyout nick.key -x509 -days 365 -out nick.crt
+cat nick.crt nick.key > nick.pem
+chmod 0400 nick.key nick.pem
+```
+
+Now you have generated a certificate you can now load irssi and use the following commands to add the network and connect.
+
+```
+/network add Sector5D
+/server add -ssl_cert ~/.irssi/certs/nick.pem -auto -network Sector5D irc.sector5d.org 6697
+/channel add -auto #sector5d Sector5D
+/connect -network Sector5D irc.sector5d.org
+/save
+```
+
+Now you should have connected to Sector 5D in irssi, the next step is [[NickServ]]. If you do not already have a NickServ account then do the following to register your nickname:
+
+```
+/msg NickServ register <password> <email-address>
+```
+
+Alternatively if you already have a [[NickServ]] account you will need to identify, you can do this with the following command.
+
+```
+/msg NickServ identify <password>
+```
+
+*Remember to change your nick name to the nickname you registered with NickServ. You can do this with the `/nick <new-nick>` command.*
+
+Once you have registered or identified with NickServ you can run the following command to add your SSL certificate to NickServ so you will not need a password to connect to NickServ again.
+
+```
+/msg NickServ cert add
+```

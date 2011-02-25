@@ -1,0 +1,79 @@
+
+This is a complete guide to creating your own server to link to the Sector5D network.
+
+Throughout this guide the prefix you used to install InspIRCd will be refered to as `$INSPIRCD_INSTALL`, you can set this as a environmental variable.
+
+```
+export INSPIRCD_INSTALL=$HOME/run
+```
+
+You will also need a short name which refers to your link, such as `kinder`.
+
+```
+export INSPIRCD_INSTANCE="kinder"
+```
+
+Before you can pull the repository or link to Sector 5D, you will need to give [[zynox]] the IP address of the system. The firewall is configured to only other links can access port 2223 and 7000.
+
+Every command in this guide should be run as the user you will be running InspIRCd from, any command prefixed with sudo should be run as root.
+
+h2. ntpd
+
+We use `time.euro.apple.com` as the ntpd server, this must be used because it is critical that all links have the exact same time.
+
+To use this server execute the following command:
+
+```
+sudo echo "server time.euro.apple.com" >> /etc/ntp.conf
+```
+
+*Note*: On Solaris `ntp.conf` is stored in `/etc/inet/ntp.conf` instead of `/etc/ntp.conf`
+
+Once you have set the configuration you will need to start/restart ntp.
+
+```
+sudo /etc/init.d/ntp start
+```
+
+On Solaris it would be:
+
+```
+sudo svcadm enable network/ntp
+```
+
+h2. inspircd-config
+
+The configuration for the Sector 5D IRC Network is all stored in a private git repository. To access this repository you will need a ssh key for the account you will be running InspIRCd from. It is important that the SSH key is setup for the account you run InspIRCd from because when REHASH is run it will pull the latest revision of the config. You will need to give the public SSH key to [[zynox]] so he can grant you permissions to read the config repository. To create a SSH key you can run the following:
+
+```
+ssh-keygen -t rsa -C "$INSPIRCD_INSTANCE"
+```
+
+You shouldn't use a password for this SSH key else it wont work with InspIRCd, once you have a key please send the file at `$HOME/.ssh/id_rsa.pub` to [[zynox]].
+
+Once you have access to the repository you will need to execute the following to pull a local copy:
+
+```
+git clone ssh://git@kinder.sector5d.org:2223/inspircd-config.git $INSPIRCD_INSTALL/conf/sector5d
+```
+
+You will need to create a config file to point to the repositories config.
+
+```
+echo '<include executable="conf/sector5d/config.sh '$INSPIRCD_INSTANCE'">' >> $INSPIRCD_INSTALL/conf/inspircd.conf
+```
+ 
+h2. Generating a SSL certificate
+
+All server's on the Sector5D IRC network have there own SSL certificate, but every server certificate has to be signed by the Sector5D root certificate.
+
+You can create your own certificate and certificate signing request with the commands below, do not select to password the private key else InspIRCd will not be able to use it:
+
+```
+mkdir -p $INSPIRCD_INSTALL/conf/certs
+cd $INSPIRCD_INSTALL/conf/certs
+openssl genrsa -out $INSPIRCD_INSTANCE.key 4096
+openssl req -new -key $INSPIRCD_INSTANCE.key -out $INSPIRCD_INSTANCE.csr
+```
+
+Once you have done this you will need to give the generated certificate signing request (`$INSPIRCD_INSTANCE.csr`) to [[zynox]] and he will generate you a signed public certificate from the root certificate.

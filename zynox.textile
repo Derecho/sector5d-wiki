@@ -1,0 +1,11 @@
+You can contact me via email: zynox <at> sector5d.org.
+
+h2. Software
+
+* Operating System: [[Mac OS X|http://www.apple.com/macosx/]], [[OpenIndiana|http://openindiana.org/]]
+* Shell: [[zsh|http://zsh.sourceforge.net/]]
+* Editor: [[vim|http://www.vim.org/]]
+* Version control: [[Git|http://git-scm.com/]]
+* Language (interpreted): [[Python|http://www.python.org/]], [[Ruby|http://www.ruby-lang.org/]]
+* Language (compiled): [[C|http://en.wikipedia.org/wiki/C_(programming_language)]], [[Objective-C|https://secure.wikimedia.org/wikipedia/en/wiki/Objective-C]]
+* IRC Client: [[irssi]], [[Textual|http://codeux.com/textual/]], [[Colloquy|http://colloquy.mobi/]]

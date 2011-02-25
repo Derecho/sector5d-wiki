@@ -1,0 +1,31 @@
+
+|*Mode*|*Effect*|
+|n|Forces a user to be in the channel to PRIVMSG it.|
+|p|Sets the channel as 'private'. Will not show up in /LIST|
+|s|Sets the channel as 'secret'. Will not show up in /LIST or in users /WHOIS|
+|t|Forces a user to have +o or +h to change the topic.|
+|m|Makes a channel "moderated". Only +ohv can talk.|
+|k [key]|Sets a key on the channel|
+|b [glob pattern]|Bans matching [glob pattern] from joining the channel|
+|e [glob pattern]|Allows users matching [glob pattern] to bypass +b|
+|i|Sets the channel as Invite-Only|
+|I [glob pattern]|Allows users matching [glob pattern] to bypass +i|
+|J [sec]|Disallows a user from joining [sec] seconds after being /KICK'd|
+|l [number]|Sets the channel limit to [number]. Once the limit is reached, no more users can join.|
+|L [channel]|When the channel is "full" (from channel mode l), forward the user to [channel].|
+|M|Users must be registered to speak in the channel.|
+|c|Blocks messages with control codes to the channel.|
+|S|Strips control codes from PRIVMSGs/NOTICEs to the channel.|
+
+h2. Prefixes
+
+|*Prefix*|*Mode*|
+|~|q|
+|&|a|
+|@|o|
+|%|h|
+|+|v|
+
+h2. See also
+
+[[User Modes]], [[ChanServ]]

@@ -1,0 +1,14 @@
+Kinder is powered by a Solaris distribution called [[OpenIndiana|http://openindiana.org/]]. Kinder is accessible via both IPv4 and IPv6.
+
+|*Protocol*|*DNS*|*Address*|
+|IPv4|ipv4.kinder.sector5d.org|93.97.27.108|
+|IPv6|ipv6.kinder.sector5d.org|2001:470:1f09:d87::420|
+
+h2. The Hardware
+
+For security reasons Kinder is a virtual machine, (well a Solaris "Zone"). If someone gains access to the IRC 'Zone' they will not be able to control the whole server. The host system has the following specifications:
+
+|*Motherboard*|ASUS M3N78-VM|
+|*Memory*|Corsair 4GB (2x2GB) DDR2 1066MHz|
+|*Processor*|AMD Athlon X2 5050e Socket AM2 45W|
+|*PSU*|Corsair 400W CX PSU|

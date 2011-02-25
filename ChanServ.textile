@@ -1,0 +1,12 @@
+h2. Registering a channel
+
+You can register a channel so if you reconnect to IRC you can regain the channel operator status. To register a channel you will need to be registered and identified with [[NickServ]]. You can register a channel with the following command.
+
+```
+/msg ChanServ register <channel>
+```
+
+h2. See also
+
+[[NickServ]], [[Channel Modes]]
+ 

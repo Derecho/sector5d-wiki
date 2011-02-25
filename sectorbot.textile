@@ -1,0 +1,1 @@
+sectorbot is a IRC bot, it's powered by [[zmb|https://github.com/kylef/zmb]] a modular ruby IRC bot developed by [[zynox]]. You can find the source code [[here|https://github.com/kylef/zmb/]].

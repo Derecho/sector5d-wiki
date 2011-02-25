@@ -1,0 +1,31 @@
+If you are interested in linking your own server to the Sector 5D network please read the bellow requirements, if you meet these then see the information at the bottom of the page for applying.
+
+h2. Requirements
+
+* Static IP Address
+* High uptime
+* Unix based operating system
+* Ability to listen on port 6697
+* To run ntpd to ensure that the server time is exactly the same as the rest of the servers.
+
+All the servers on the network must run the exact same config, there are certain exceptions to this such as logging, connection limits and bans. Please speak to [[zynox]] for any requests.
+
+You must agree with our policies, if you have any suggestions or think we should change the config please tell us and we will vote.
+
+h3. Software
+
+* InspIRCd 2.0 or later.
+* Git
+* SSH
+* Shell (bash, zsh, etc)
+* ntpd
+
+h2. Applying to host a server
+
+If you meet all the requirements then you can apply to host a server. To do this please contact a [[OperGroup|Global Oper]]. You will need to give the oper the following information:
+
+* Wiki username - So we can give you access to private parts of the wiki such as our [[Linking_Guide|Linking Guide]].
+* NickServ username - This is used to confirm your identity on IRC.
+* IP Address - The IP address of the system so we can check latency, and add firewall exceptions.
+* Server name - This is a short name used to refer to your system, such as `kinder` is one of our systems.
+* Location of the server - The country the server is located in.

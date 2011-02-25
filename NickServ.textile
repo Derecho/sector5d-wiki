@@ -1,0 +1,41 @@
+h2. Register
+
+Before you register change your nick to the nickname you want to register. You can change your nick name with `/nick <nickname>`.
+
+To register you can use the following command:
+
+```
+/msg NickServ register <password> <email-address>
+```
+
+If you need any additional help with NickServ you can type:
+
+```
+/msg NickServ help register
+```
+
+h2. Identify
+
+Everytime you connect to IRC you will need to identify to NickServ, so NickServ knows who you are. You can do this with the following command:
+
+```
+/msg NickServ identify <password>
+```
+
+h2. SSL Client Certificates
+
+You can use client side certificates to identify yourself to NickServ. With a client side certificate you can identify without a password, as long as you have the private SSL certificate. Not all IRC clients support this, [[Clients/irssi|irssi]], mIRC and XChat do support SSL client certificates. Please see your IRC client's documentation on how to actually create and use a SSL certificate. When you connect with a SSL certificate you will see the following message.
+
+```
+!kinder.sector5d.org *** You are connected using SSL cipher "DHE-RSA-AES-256-CBC-SHA1" and your SSL fingerprint is bf9bc97fa4454fe5bb859a36c0fbd3ac
+```
+
+You will need to identify with your password to add this certificate to your account. Once you have identified you can use the following command to add the fingerprint to your account.
+
+```
+/msg NickServ cert add
+```
+
+h2. See also
+
+[[User Modes]], [[ChanServ]]

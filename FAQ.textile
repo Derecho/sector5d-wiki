@@ -1,0 +1,47 @@
+h1. Frequently Asked Questions
+
+h2. User Registration
+
+h3. Q: Can I register my nickname?
+
+Yes, can register your nickname with [[NickServ]].
+
+h3. Q: Can I use a client side SSL certificate?
+
+Yes, please take a look [[here|NickServ#SSL_Client_Certificates]].
+
+h3. Q: Can I register a channel?
+
+Yes, you can register a channel with [[ChanServ]].
+
+h3. Q: Can I get a host cloak?
+
+Yes, once you register and identify with [[NickServ]] a hostcloak of `<nick>.users.sector5d.org` will be applied. Make sure you identify before you join any channels to make sure the hostcloak is applied before you join a channel.
+
+h2. Using the network
+
+h3. Q: Is there a official Sector 5D channel?
+
+Yes, it is at `#sector5d`.
+
+h3. Q: Can I access Sector 5D via webchat?
+
+Yes, there is an official [[Webchat]] which you can find at [[here|Webchat]].
+
+h3. Q: How do I configure irssi to connect to Sector 5D?
+
+Take a look [[here|irssi]].
+
+h3. Q: Is there a list of usermodes or channel modes?
+
+See [[User Modes]] and [[Channel Modes]].
+
+h3. Q: What makes this IRC network different from other IRC network?
+
+Two main differences are that we require SSL on every connection, and we give host cloaks once a user has registered and identified with [[NickServ]].
+
+h2. Server Questions
+
+h3. Q: How do I link my own server to the network?
+
+If you are interested in linking your own server to the Sector 5D network then please see [[here|Linking]].

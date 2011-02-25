@@ -1,0 +1,119 @@
+h2. All Opers
+
+h3. KILL [nickname-list] [reason]
+
+This command will disconnect a user from IRC with the given reason. You may provide the nicknames of multiple users in the first parameter seperated by commas. If you disconnect yourself, parsing of the command will stop at the position of your nickname in the list.
+
+h3. GLINE [user@host] {[duration] :[reason]}
+
+Sets or removes a g-line (global host based ban) on host mask. You must specify at least 3 parameters to add a ban, and one parameter to remove a ban (just the user@host section). The duration may be specified in seconds, or in the following format 1y2w3d4h5m6s - meaning one year, two weeks, three days, 4 hours, 5 minutes and 6 seconds. All fields in this format are optional.
+
+Please note that a GLINE is checked before the user registers in a similar way to ZLINE if it is a '*@ip' format of mask. This prevents waste of resources in needless DNS and ident lookups etc.
+
+h3. KLINE [user@host] {[duration] :[reason]}
+
+Sets or removes a k-line (host based ban) on a host and ident mask. You must specify at least 3 parameters to add a ban, and one parameter to remove a ban (just the user@host section). The duration may be specified in seconds, or in the following format 1y2w3d4h5m6s - meaning one year, two weeks, three days, 4 hours, 5 minutes and 6 seconds. All fields in this format are optional.
+
+Please note that a KLINE is checked before the user registers in a similar way to ZLINE if it is a '*@ip' format of mask. This prevents waste of resources in needless DNS and ident lookups etc.
+
+h3. ZLINE [ipmask] {[duration] :[reason]}
+
+Sets or removes a z-line (ip based ban) on an ip range mask. You must specify at least 3 parameters to add a ban, and one parameter to remove a ban (just the ipmask). The duration may be specified in seconds, or in the following format 1y2w3d4h5m6s - meaning one year, two weeks, three days, 4 hours, 5 minutes and 6 seconds. All fields in this format are optional.
+
+h3. QLINE [nickmask] {[duration] :[reason]}
+
+Sets or removes a q-line (global nick based ban) on a nick mask. You must specify at least 3 parameters to add a ban, and one parameter to remove a ban (just the nickmask). The duration may be specified in seconds, or in the following format 1y2w3d4h5m6s - meaning one year, two weeks, three days, 4 hours, 5 minutes and 6 seconds. All fields in this format are optional.
+
+h3. ELINE [user@host] {[duration] :[reason]}
+
+Sets or removes a e-line (local ban exception) on host mask. You must specify at least 3 parameters to add an exception, and one parameter to remove an exception (just the user@host section). The duration may be specified in seconds, or in the following format 1y2w3d4h5m6s - meaning one year, two weeks, three days, 4 hours, 5 minutes and 6 seconds. All fields in this format are optional.
+
+h3. SHUN <hostmask> <duration> <reason>
+
+Add a shun on 'hostmask', duration is a string like "5m2d" for five minutes and two days. The reason is shown in the list of shuns and in the snotices sent to opers.
+
+To remove a shun you would run the following:
+
+```
+SHUN <hostmask>
+```
+
+When a user is shunned they can only send certain IRC commands such as PING, PONG and QUIT. This may be useful to stop a flooder.
+
+h3. NICKLOCK <Nick> <NewNick>
+
+Forces a nickchange upon someone, and forces the nickchange to remain enforced until the user quits IRC (Oper Only)
+
+h3. NICKUNLOCK <Nick>
+
+Remove a hold on <Nick>.
+
+h3. CBAN
+
+Allows temporary or permenant bans stopping channels from being used, you must also supply a reason for the ban.
+
+The reason will be displayed to users who try to join the channel which is banned.
+
+Add a CBAN for #channel lasting 3 hours, 4 minutes and 5 seconds, with an reason.
+
+```
+/CBAN #channel 3h4m5s :reason
+```
+
+Remove a CBAN on #channel
+
+```
+/CBAN #channel
+```
+
+h3. CHECK <channel>|<hostmask>|<ip>|<nick>
+
+Allows opers to look up advanced information on channels, hostmasks or IP addresses, in a similar way to WHO but in more detail.
+
+h2. Server Oper
+
+Only server operators have access to the following commands.
+
+h3. DIE [password]
+
+If the correct password is provided, and you are an operator, this command will shut down the local server.
+
+h3. RESTART [password]
+
+If the correct password is provided, and you are an operator, this command will restart the local server.
+
+h3. REHASH
+
+This command will first pull the latest configuration from the git repository and then the IRC server will reload it's settings and re-initialize. The core will also unload any modules which you have removed from the config, and load any new modules which you have added since the last time the Configuration file was read.
+
+h3. CONNECT [servermask] {servermask}
+
+Create a connection to the given servermask. If you specify more than one parameter, the first parameter is that of a server to be instructed to connect to the second, remotely.
+
+h3. SQUIT
+
+Disconnect a locally connected server matching servermask from the network.
+
+h3. CLOSE
+
+Closes all unregistered connections to the server.
+
+*Note*: "Unregistered connections" means all connections which have not fully connected to the IRC network (Sent preliminary NICK/USER/PASS), and has nothing to do with IRC services.
+
+h3. JUMPSERVER [<newserver> <newport> <+/-flags> [:<reason>]]
+
+Sets or cancels jumpserver mode.
+
+* If no parameters are given, jumpserver mode is cancelled, if it is currently set.
+* If parameters are given, a server address must be given for <newserver> and a server port must be given for <newport>. Zero or more status flags should be given for 'flags', from the list below (if you do not wish to specify any flags just place a '+' in this field):
+** +a: Redirect all users immediately (except for opers) and cause them to quit with the given reason
+** +n: Redirect any new users who connect and cause them to quit during registration
+** you may use + and - to set or unset these flags in the command, the default flags are -a+n, which will just redirect new users.
+
+h3. LOCKSERV
+
+Locks out all new connections notifying connecting users that the service is temporarily closed and to try later.
+
+h3. UNLOCKSERV
+
+Open up again for new connections.
