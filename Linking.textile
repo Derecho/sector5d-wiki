@@ -24,7 +24,6 @@ h2. Applying to host a server
 
 If you meet all the requirements then you can apply to host a server. To do this please contact a [[OperGroup|Global Oper]]. You will need to give the oper the following information:
 
-* Wiki username - So we can give you access to private parts of the wiki such as our [[Linking_Guide|Linking Guide]].
 * NickServ username - This is used to confirm your identity on IRC.
 * IP Address - The IP address of the system so we can check latency, and add firewall exceptions.
 * Server name - This is a short name used to refer to your system, such as `kinder` is one of our systems.
