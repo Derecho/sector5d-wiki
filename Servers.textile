@@ -1,3 +1,5 @@
+h1. Servers
+
 You can connect to Sector 5D with irc.sector5d.org on port 6697 with SSL. This is a round robin and will point you to a server. This network is SSL-only, make sure you enable SSL.
 
 |*Address*|*Ports*|*IPv6*|*Location*|*Admin*|
