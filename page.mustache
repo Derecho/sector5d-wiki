@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="/media/css/screen.css" type="text/css" media="screen" charset="utf-8">
+    <title>{{wiki_title}} - {{page_title}}</title>
+</head>
+<body>
+    {{{ribbon_html}}}
+
+    <header>
+        <div class="container">
+            <h1>{{wiki_title}}</h1>
+
+            <nav>
+                <ul>
+                    {{{menu_html}}}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+	
+    <div class="container">
+		<article>
+            {{{content}}}
+        </article>
+
+        <div id="sidebar">
+            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 6000,
+  width: 250,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#d6d6d6',
+      color: '#333333'
+    },
+    tweets: {
+      background: '#c7c7c7',
+      color: '#454545',
+      links: '#000000'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('Sector5D').start();
+            </script>
+        </div>
+
+        <footer>
+            <span>Copyright 2011 Sector 5D</span>
+        </footer>
+    </div>
+</body>
+</html>
