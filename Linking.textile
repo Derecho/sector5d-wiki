@@ -1,3 +1,5 @@
+h1. Linking to Sector 5D
+
 If you are interested in linking your own server to the Sector 5D network please read the bellow requirements, if you meet these then see the information at the bottom of the page for applying.
 
 h2. Requirements
@@ -22,7 +24,7 @@ h3. Software
 
 h2. Applying to host a server
 
-If you meet all the requirements then you can apply to host a server. To do this please contact a [[OperGroup|Global Oper]]. You will need to give the oper the following information:
+If you meet all the requirements then you can apply to host a server. To do this please contact a [[Global Oper|Opers]]. You will need to give the oper the following information:
 
 * NickServ username - This is used to confirm your identity on IRC.
 * IP Address - The IP address of the system so we can check latency, and add firewall exceptions.
