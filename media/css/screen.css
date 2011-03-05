@@ -60,8 +60,12 @@ abbr, acronym { text-decoration: underline; }
 pre, code { margin: 20px 0; white-space: pre; }
 pre, code, pre span { font-family: "Bitstream Vera Sans Mono", "Monaco", "Courier New", monospace; line-height: 20px; font-size: 9pt; font-weight: normal; }
 
+code {
+    background: #eee;
+}
+
 pre {
-    background: #ddd;
+    background: #eee;
     padding: 10px;
     border: 1px solid #bbb;
     border-radius: 5px;
