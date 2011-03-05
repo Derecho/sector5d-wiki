@@ -2,7 +2,7 @@ This is a guide to configuring irssi to connect to Sector 5D.
 
 h2. Basic connection
 
-The following commands will create a basic SSL connection to Sector 5D. For a better setup please see [[the full configuration guide|#Full configuration]] below.
+The following commands will create a basic SSL connection to Sector 5D. For a better setup please see the full configuration guide below.
 
 ```
 /network add Sector5D
