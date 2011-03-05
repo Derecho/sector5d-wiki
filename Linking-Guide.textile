@@ -1,7 +1,7 @@
 
 This is a complete guide to creating your own server to link to the Sector5D network.
 
-Throughout this guide the prefix you used to install InspIRCd will be refered to as `$INSPIRCD_INSTALL`, you can set this as a environmental variable.
+Throughout this guide the prefix you used to install InspIRCd will be refered to as @$INSPIRCD_INSTALL@, you can set this as a environmental variable.
 
 ```
 export INSPIRCD_INSTALL=$HOME/run
@@ -19,7 +19,7 @@ Every command in this guide should be run as the user you will be running InspIR
 
 h2. ntpd
 
-We use `time.euro.apple.com` as the ntpd server, this must be used because it is critical that all links have the exact same time.
+We use @time.euro.apple.com@ as the ntpd server, this must be used because it is critical that all links have the exact same time.
 
 To use this server execute the following command:
 
@@ -27,7 +27,7 @@ To use this server execute the following command:
 sudo echo "server time.euro.apple.com" >> /etc/ntp.conf
 ```
 
-*Note*: On Solaris `ntp.conf` is stored in `/etc/inet/ntp.conf` instead of `/etc/ntp.conf`
+*Note*: On Solaris @ntp.conf@ is stored in @/etc/inet/ntp.conf@ instead of @/etc/ntp.conf@
 
 Once you have set the configuration you will need to start/restart ntp.
 
@@ -49,7 +49,7 @@ The configuration for the Sector 5D IRC Network is all stored in a private git r
 ssh-keygen -t rsa -C "$INSPIRCD_INSTANCE"
 ```
 
-You shouldn't use a password for this SSH key else it wont work with InspIRCd, once you have a key please send the file at `$HOME/.ssh/id_rsa.pub` to [[zynox]].
+You shouldn't use a password for this SSH key else it wont work with InspIRCd, once you have a key please send the file at @$HOME/.ssh/id_rsa.pub@ to [[zynox]].
 
 Once you have access to the repository you will need to execute the following to pull a local copy:
 
@@ -76,4 +76,4 @@ openssl genrsa -out $INSPIRCD_INSTANCE.key 4096
 openssl req -new -key $INSPIRCD_INSTANCE.key -out $INSPIRCD_INSTANCE.csr
 ```
 
-Once you have done this you will need to give the generated certificate signing request (`$INSPIRCD_INSTANCE.csr`) to [[zynox]] and he will generate you a signed public certificate from the root certificate.
+Once you have done this you will need to give the generated certificate signing request (@$INSPIRCD_INSTANCE.csr@) to [[zynox]] and he will generate you a signed public certificate from the root certificate.

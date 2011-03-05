@@ -48,7 +48,7 @@ Alternatively if you already have a [[NickServ]] account you will need to identi
 /msg NickServ identify <password>
 ```
 
-*Remember to change your nick name to the nickname you registered with NickServ. You can do this with the `/nick <new-nick>` command.*
+*Remember to change your nick name to the nickname you registered with NickServ. You can do this with the @/nick <new-nick>@ command.*
 
 Once you have registered or identified with NickServ you can run the following command to add your SSL certificate to NickServ so you will not need a password to connect to NickServ again.
 

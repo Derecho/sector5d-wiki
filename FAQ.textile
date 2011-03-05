@@ -16,13 +16,13 @@ Yes, you can register a channel with [[ChanServ]].
 
 h3. Q: Can I get a host cloak?
 
-Yes, once you register and identify with [[NickServ]] a hostcloak of `<nick>.users.sector5d.org` will be applied. Make sure you identify before you join any channels to make sure the hostcloak is applied before you join a channel.
+Yes, once you register and identify with [[NickServ]] a hostcloak of @<nick>.users.sector5d.org@ will be applied. Make sure you identify before you join any channels to make sure the hostcloak is applied before you join a channel.
 
 h2. Using the network
 
 h3. Q: Is there a official Sector 5D channel?
 
-Yes, it is at `#sector5d`.
+Yes, it is at @#sector5d@.
 
 h3. Q: Can I access Sector 5D via webchat?
 

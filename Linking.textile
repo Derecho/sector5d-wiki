@@ -28,5 +28,5 @@ If you meet all the requirements then you can apply to host a server. To do this
 
 * NickServ username - This is used to confirm your identity on IRC.
 * IP Address - The IP address of the system so we can check latency, and add firewall exceptions.
-* Server name - This is a short name used to refer to your system, such as `kinder` is one of our systems.
+* Server name - This is a short name used to refer to your system, such as @kinder@ is one of our systems.
 * Location of the server - The country the server is located in.

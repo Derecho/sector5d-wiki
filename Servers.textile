@@ -6,7 +6,7 @@ You can connect to Sector 5D with irc.sector5d.org on port 6697 with SSL. This i
 | [[kinder.sector5d.org|kinder]] | 6697 SSL |  [[/media/icons/silk/tick.png]] | GB [[/media/icons/flags/gb.png]] | [[zynox]] |
 | infinite.sector5d.org | 6697 SSL |  [[/media/icons/silk/cross.png]] | GB [[/media/icons/flags/gb.png]] | [[Scott]] |
 
-You can prefix `ipv4.` or `ipv6.` to `irc.sector5d.org` to enforce a certain internet protocol version is used.
+You can prefix @ipv4.@ or @ipv6.@ to @irc.sector5d.org@ to enforce a certain internet protocol version is used.
 
 h2. SSL
 
