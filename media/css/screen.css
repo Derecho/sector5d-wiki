@@ -95,6 +95,9 @@ a:hover {
     color:#0677b8;
 }
 
+a.absent {
+    color: #da5d2b;
+}
 
 h1 {
     font-size: 20pt;
