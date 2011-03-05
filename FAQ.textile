@@ -26,7 +26,7 @@ Yes, it is at @#sector5d@.
 
 h3. Q: Can I access Sector 5D via webchat?
 
-Yes, there is an official [[Webchat]] which you can find at [[here|Webchat]].
+Yes, there is an official [[Webchat|http://wbe04.mibbit.com/?settings=278e6d4d9fcb17bc10ac48082e6ff21d&server=irc.sector5d.org%3A%2B6697&channel=%23sector5d&hashtag=%23sector5d]] which you can find at [[here|http://wbe04.mibbit.com/?settings=278e6d4d9fcb17bc10ac48082e6ff21d&server=irc.sector5d.org%3A%2B6697&channel=%23sector5d&hashtag=%23sector5d]].
 
 h3. Q: How do I configure irssi to connect to Sector 5D?
 
