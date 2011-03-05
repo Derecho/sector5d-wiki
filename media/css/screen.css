@@ -149,7 +149,7 @@ td {
 }
 
 header {
-    background: #28425c url(/media/images/header-bg.png) repeat-x;
+    background: url(/media/images/header-bg.png) repeat-x;
     height: 103px;
 }
 
