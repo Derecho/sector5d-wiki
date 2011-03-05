@@ -83,7 +83,7 @@ h6 { font-size: 14px; line-height: 20px; font-weight: bold; }
 /* */
 
 body {
-    background: url(/media/images/bg.png);
+    background: #e6eadc url(/media/images/bg.png);
     /*font: normal normal normal 13.34px/normal helvetica, arial, sans-serif;*/
     font-size: 14px;
 	line-height: 1.4em;
@@ -149,7 +149,7 @@ td {
 }
 
 header {
-    background: url(/media/images/header-bg.png) repeat-x;
+    background: #28425c url(/media/images/header-bg.png) repeat-x;
     height: 103px;
 }
 
