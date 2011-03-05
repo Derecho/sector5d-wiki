@@ -1,5 +1,5 @@
 
-This is a complete guide to creating your own server to link to the Sector5D network.
+This is a complete guide to creating your own server to link to the Sector 5D network.
 
 Throughout this guide the prefix you used to install InspIRCd will be refered to as @$INSPIRCD_INSTALL@, you can set this as a environmental variable.
 
@@ -65,7 +65,7 @@ echo '<include executable="conf/sector5d/config.sh '$INSPIRCD_INSTANCE'">' >> $I
  
 h2. Generating a SSL certificate
 
-All server's on the Sector5D IRC network have there own SSL certificate, but every server certificate has to be signed by the Sector5D root certificate.
+All server's on the Sector 5D IRC network have there own SSL certificate, but every server certificate has to be signed by the Sector 5D root certificate.
 
 You can create your own certificate and certificate signing request with the commands below, do not select to password the private key else InspIRCd will not be able to use it:
 
