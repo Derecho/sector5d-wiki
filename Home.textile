@@ -1,14 +1,8 @@
 Welcome to Sector 5D IRC Network.
 
-h2. #sector5d
+h2. [[#sector5d|Channel]]
 
-#sector5d is the official channel for the network.
-
-h3. Rules
-
-* No flooding or spamming
-* Please use a pastebin such as [[dpaste.de|http://dpaste.de/]] or [[pastie.org|http://pastie.org/]] when pasting more than 3 lines.
-* No insulting others, or starting flamewars.
+[[#sector5d|Channel]] is the official channel for the network.
 
 h2. More
 

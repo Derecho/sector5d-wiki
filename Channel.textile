@@ -1,0 +1,17 @@
+h1. #sector5d
+
+This page is about the official Sector 5D IRC channel at #sector5d. You can find [[channel statistics|http://stats.sector5d.org/]] which are generated nightly [[here|http://stats.sector5d.org/]]
+
+
+h2. Rules
+
+* No flooding or spamming
+* Please use a pastebin such as [[dpaste.de|http://dpaste.de/]] or [[pastie.org|http://pastie.org/]] when pasting more than 3 lines.
+* No insulting others, or starting flamewars.
+* No auto-rejoin after kick
+* No advertising
+
+h2. See Also
+
+[[sectorbot]], [[NickServ]]
+
