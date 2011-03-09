@@ -28,7 +28,7 @@ h3. ELINE [user@host] {[duration] :[reason]}
 
 Sets or removes a e-line (local ban exception) on host mask. You must specify at least 3 parameters to add an exception, and one parameter to remove an exception (just the user@host section). The duration may be specified in seconds, or in the following format 1y2w3d4h5m6s - meaning one year, two weeks, three days, 4 hours, 5 minutes and 6 seconds. All fields in this format are optional.
 
-h3. SHUN <hostmask> <duration> <reason>
+h3. SHUN [hostmask] {[duration] [reason]}
 
 Add a shun on 'hostmask', duration is a string like "5m2d" for five minutes and two days. The reason is shown in the list of shuns and in the snotices sent to opers.
 
@@ -39,6 +39,10 @@ SHUN <hostmask>
 ```
 
 When a user is shunned they can only send certain IRC commands such as PING, PONG and QUIT. This may be useful to stop a flooder.
+
+h4. List all shuns
+
+You can list all shuns by using @/STATS s@
 
 h3. NICKLOCK <Nick> <NewNick>
 
