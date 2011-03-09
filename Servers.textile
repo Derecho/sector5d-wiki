@@ -10,7 +10,7 @@ You can prefix @ipv4.@ or @ipv6.@ to @irc.sector5d.org@ to enforce a certain int
 
 h2. SSL
 
-Our server's only accept SSL connections, you MUST enable SSL to connect. You can download our CA certificate: [[here|/keys/ca.crt]]. With the CA certificate you can ensure that you are connected directly to one of our servers. Please see your IRC client documentation on how to do this, usually you will connect using a command similar to:
+Our server's only accept SSL connections, you *MUST* enable SSL to connect. You can download our CA certificate: [[here|/keys/ca.crt]]. With the CA certificate you can ensure that you are connected directly to one of our servers. Please see your IRC client documentation on how to do this, usually you will connect using a command similar to:
 
 ```
 /connect -ssl_verify -ssl_capath ~/.sector5d.crt irc.sector5d.org 6697
