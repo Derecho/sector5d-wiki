@@ -1,0 +1,49 @@
+h1. Server Notice Mask (SNOMASK)
+
+h2. List of all SNOMASKs
+
+|*Mask*|*Function*|
+|A|Allows receipt of global announcement messages|
+|a|Allows receipt of local announcement messages|
+|C|Allows receipt of remote connect messages|
+|c|Allows receipt of local connect messages|
+|Q|Allows receipt of remote quit messages|
+|q|Allows receipt of local quit messages|
+|k|Allows receipt of local kill messages|
+|K|Allows receipt of remote kill messages|
+|L|Allows receipt of linking related messages from other servers|
+|l|Allows receipt of linking related messages|
+|O|Allows receipt of remote oper-up, oper-down, and oper-failure messages|
+|o|Allows receipt of local oper-up, oper-down, and oper-failure messages|
+|d|Allows receipt of general (and sometimes random) debug messages|
+|x|Allows receipt of Xline notices (g/z/q/k/e as well as Xlines provided by modules)|
+|t|Allows receipt of attempts to use /STATS (local and remote)|
+|f|Allows receipt of flooding notices|
+|n|See local nickname changes|
+|N|See remote nickname changes|
+
+h2. Enabling SNOMASKS
+
+To enable a SNOMASK you need to set the mode @+s <masks>@. For example you can add the @x@ mask by using the following command:
+
+```
+/MODE {nick} +s +x
+```
+
+You can then remove this mask using the following:
+
+
+```
+/MODE {nick} +s -x
+```
+
+You can remove all masks by doing:
+
+
+```
+/MODE {nick} -s
+```
+
+h2. #opers
+
+The #opers channel will receive snomasks @kox@, so you can see kill notices, ban notices and oper-up/oper-down/oper-fail notices.
