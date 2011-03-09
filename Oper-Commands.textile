@@ -1,5 +1,30 @@
 h2. All Opers
 
+h3. STATS [symbol] {server}
+
+Shows various server statistics. If a server parameter is given, the stats output from the servername you provide is returned instead of that of the local server.
+
+|*Character*|*Description*|
+|c|Show link blocks|
+|e|Show e-lines (local ban exemptions)|
+|g|Show g-lines (global bans)|
+|k|Show k-lines (local bans)|
+|l|Show all client connections with information and host|
+|L|Show all client connections with information and IP address (1.1 only)|
+|m|Show command statistics, number of times commands have been used|
+|o|Show a list of all valid oper usernames and hostmasks|
+|q|Show q-lines (nick mask bans)|
+|u|Show server uptime|
+|s|Show filter definitions, when an m_filter* module is loaded|
+|T|Show bandwidth/socket statistics|
+|I|Show connect class permissions|
+|P|Show online opers and their idle times|
+|p|Show open client ports, and the port type (ssl, plaintext, etc) plus number of users on each port|
+|U|Show u-lined servers|
+|y|Show connection classes|
+|z|Show memory usage statistics|
+|Z|Show z-lines (IP address mask bans)|
+
 h3. KILL [nickname-list] [reason]
 
 This command will disconnect a user from IRC with the given reason. You may provide the nicknames of multiple users in the first parameter seperated by commas. If you disconnect yourself, parsing of the command will stop at the position of your nickname in the list.
