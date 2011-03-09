@@ -1,5 +1,11 @@
 Welcome to Sector 5D IRC Network.
 
+h2. Connecting
+
+You can connect to Sector 5D at irc.sector5d.org on port 6697 with SSL. You can find a full list of our [[Servers here|Servers]].
+
+If you are having any issues connecting this may be due to your client trying to connect via IPv6 when you do not have a IPv6 connection, if this is the case you can try connecting to ipv4.irc.sector5d.org
+
 h2. [[#sector5d|Channel]]
 
 [[#sector5d|Channel]] is the official channel for the network.
